@@ -24,16 +24,16 @@ const App = () => {
 
   return (
     <div>
-      <label htmlFor="username">User Id</label>
-      <input id="username" type="text" placeholder="User Name" />
+     {!isLogin && <div> <label htmlFor="username">User Id</label>
+     <input id="username" type="text" placeholder="User Name" />
       <br />
       <br />
       <label htmlFor="password">Password</label>
-      <input id="password" type="password" placeholder="Password" />
+     <input id="password" type="password" placeholder="Password" />
       <br />
-      <button onClick={handleClick}>Log In</button>
+      <button onClick={handleClick}>Log In</button></div>}
 
-      {isLogin && <p>You are now logged in ✅</p>}
+      {isLogin && <p>You are now logged in!</p>}
     </div>
   );
 };
