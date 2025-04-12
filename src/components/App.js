@@ -24,11 +24,13 @@ const App = () => {
 
   return (
     <div>
-     {!isLogin && <div> <label htmlFor="username">User Id</label>
+      <h1>Parent Component</h1>
+
+     {!isLogin && <div> <label htmlFor="username">Username :</label>
      <input id="username" type="text" placeholder="User Name" />
       <br />
       <br />
-      <label htmlFor="password">Password</label>
+      <label htmlFor="password">Password:</label>
      <input id="password" type="password" placeholder="Password" />
       <br />
       <button onClick={handleClick}>Log In</button></div>}
