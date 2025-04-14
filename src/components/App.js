@@ -44,8 +44,7 @@
 
 import React, { useState } from "react";
 import "./../styles/App.css";
-import LoginForm from "./LoginForm";
-
+import LoginForm from "./LogInForm";
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
